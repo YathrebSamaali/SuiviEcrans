@@ -1,0 +1,166 @@
+/* Styles pour le tableau */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+th,
+td {
+    padding: 14px;
+    text-align: center;
+}
+
+th {
+    background-color: #4e73df;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* Style des en-têtes de colonnes du tableau */
+.table th {
+    background-color: #4e73df;
+    color: #ffffff;
+}
+
+/* Supprimer les bordures du tableau */
+table, th, td {
+    border: none;
+}
+
+
+/* Styles pour les boutons d'exportation */
+.export-buttons {
+    margin-bottom: 20px;
+}
+
+.export-buttons button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.export-buttons .excel-button {
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.export-buttons .pdf-button {
+    background-color: #dc3545;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.export-buttons button i {
+    margin-right: 5px;
+}
+
+/* Style pour la barre latérale */
+.sidebar {
+    background-color: #333;
+    color: #fff;
+    height: 100vh;
+    margin-top: 0;
+    padding-top: 40px;
+}
+.sidebar .nav-link {
+    color: #fff; /* Modifier la couleur du texte en blanc */
+}
+
+.sidebar .nav-link:hover {
+    color: #fff; /* Modifier la couleur du texte en blanc au survol */
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+.navbar-nav {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    width: 16%;
+}
+
+/* Style pour la pagination */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination a {
+    color: #333;
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: #f2f2f2;
+}
+
+
+.pagination .active {
+    background-color: #4477CE;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.pagination .disabled {
+    color: #ccc;
+    pointer-events: none;
+}
+
+/* Styles pour les boutons Ajouter, Éditer et Supprimer */
+.btn-add {
+    background-color: #1cc88a;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.btn-add:hover {
+    background-color: #1cc88a;
+    color: #ffffff;
+}
+
+.link-edit {
+    color: #1cc88a;
+}
+
+.link-edit:hover {
+    color: #1cc88a;
+}
+
+.link-delete {
+    color: #e74a3b;
+}
+
+.link-delete:hover {
+    color: #e74a3b;
+}

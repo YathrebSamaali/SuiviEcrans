@@ -1,0 +1,80 @@
+*****************pour la 1er fois il faut**************
+
+1-installer php (pour voir version tapez php-v)
+2-Installer XAMPP(utiliser le seurveur apache)
+3-Ouvrir le fichier php.ini se trouve généralement dans le répertoire "php" de votre installation XAMPP. Le chemin par défaut sous Windows est "C:\xampp\php\php.ini".
+4-Recherchez les extensions:supprimer point virgule au debut de : extension=pgsql | extension=pdo_pgsql
+5-Sauvegardez le fichier php.ini
+6-Redémarrez Apache
+7-installez PostgreSQL
+8-notez le mot de passe que vous attribuez à l'utilisateur PostgreSQL ( pa exemple dans le projet de serigraphie mdp : 123
+9-Créer une base de données: Ouvrez pgAdmin puis Connectez-vous à PostgreSQL en utilisant le mot de passe défini lors de l'installation apres par default il ya base de donnee nommée postgres et user nommée postgres aussi il faut seulement crée un schema puis cree les tables (schema.nomdetable)
+10-placer l'application dans le répertoire htdocs de XAMPP .
+11-Accédez à votre application via votre navigateur en utilisant l'URL http://localhost/votreprojet.
+12-Assurez-vous que votre application se connecte correctement à la base de données PostgreSQL.
+
+
+
+nb avec la modification j'ai placer le nom de table operation avec utilisation 
+et modifier operation.php par utilisation.php
+**************pour notre projet suiviecrans on a ***************
+
+Base de données : "postgres"
+Utilisateur : "postgres"
+Mot de passe : "123"
+Schéma de table : "suiviecrans"
+host = "localhost"
+port = "5432"
+
+
+*************les tables ***********************
+
+-----------Table ecrans : Cette table contient des informations sur les écrans.-------------
+-- suiviecrans.ecrans definition
+
+-- Drop table
+
+-- DROP TABLE suiviecrans.ecrans;
+
+CREATE TABLE suiviecrans.ecrans (
+	id serial4 NOT NULL,
+	numero_ecran varchar NULL,
+	emplacement varchar NULL,
+	produit varchar NULL,
+	"ref" varchar NULL,
+	face varchar NULL,
+	CONSTRAINT ecrans_pkey PRIMARY KEY (id)
+);
+
+------------Table  operations : Cette table contient des informations sur les opérations liées aux écrans.-----------
+-- suiviecrans.operations definition
+
+-- Drop table
+
+-- DROP TABLE suiviecrans.operations;
+
+CREATE TABLE suiviecrans.operations (
+	id serial4 NOT NULL,
+	matricule varchar NULL,
+	operation varchar NULL,
+	numero_ecran varchar NULL,
+	etat varchar NULL,
+	numero_ligne_cms varchar NULL,
+	equipe varchar NULL,
+	commentaire varchar NULL,
+	"date" date NULL,
+	CONSTRAINT operations_pkey PRIMARY KEY (id)
+);
+
+------------Table users : Cette table contient des informations sur les utilisateurs.-----------------
+
+-- Drop table
+
+-- DROP TABLE suiviecrans.users;
+
+CREATE TABLE suiviecrans.users (
+	username varchar NULL,
+	id serial4 NOT NULL,
+	"matricule" varchar NULL,
+	"email" varchar NULL
+);

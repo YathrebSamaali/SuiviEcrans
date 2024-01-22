@@ -1,0 +1,237 @@
+/*Structure de table de recherche de l'emplacement */
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    width: 20%; /* Equal width for all columns */
+}
+
+table th {
+    background-color: #f2f2f2;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Highlight class for the "emplacement" column */
+.highlight {
+    background-color: #c1e2b3;
+}
+
+
+/*espace admin*/
+.sidebar {
+    background-color: #333;
+    color: #fff;
+   
+    height: 100vh;
+   
+    margin-top: 0;
+    padding-top: 40px;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #fff;
+   
+    margin-bottom: 20px; /* Ajouter un espace entre les éléments de la barre de navigation */
+}
+.nav-link:hover {
+    color: #ffffff; /* conserve la même couleur de texte au survol */
+}
+
+
+/*video */
+
+.video-container {
+    position: relative;
+    max-width: 100%;
+}
+
+.video-cover {
+    position: relative;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.play-icon {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+
+
+/*pagination*/
+
+
+
+
+
+/*Formulaire de l'enregistrement des utilisation*/
+
+.form-container {
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    width: 50%;
+    margin-top: 5px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: none; /* Permettre le redimensionnement vertical uniquement */
+}
+
+
+input[type="submit"] {
+    background-color: #5a5af3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 20%;
+}
+
+input[type="submit"]:hover {
+    background-color: #5a5af3;
+}
+
+
+
+/**contact**/
+a {
+    text-decoration: none;
+  }
+  
+  .contact {
+    padding: 80px 0;
+  
+  }
+  
+  .contact .heading h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contact .heading h2 span {
+    color: #5a5af3;
+  }
+  
+  .contact .heading p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #999999;
+    margin: 20px 0 60px;
+    padding: 0;
+  }
+  
+  .contact .form-control {
+    padding: 15px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+    border: 0;
+    border-radius: 10px;
+  }
+  
+  .contact button.btn {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    background: #5a5af3;
+    color: #ffffff;
+  }
+  
+  .contact .title h3 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .contact .title p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+    line-height: 1.6;
+    margin: 0 0 40px;
+  }
+  
+  .contact .content .info {
+    margin-top: 30px;
+  }
+  .contact .content .info i {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    color: #02434b;
+    margin-right: 20px;
+    text-align: center;
+    width: 20px;
+  }
+  .contact .content .info h4 {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  
+  .contact .content .info h4 span {
+    font-size: 13px;
+    font-weight: 300;
+    color: #999999;
+  }
+   
+  .erreur-champ {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+  }
+  
+  .erreur-champ i {
+    margin-right: 5px;
+  }
+  
