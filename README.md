@@ -1,71 +1,71 @@
-# **Application de Traçabilité des Écrans de Sérigraphie**
+# **Screen Printing Traceability Application**
 
-Une application informatique pour tracer l'utilisation des écrans de sérigraphie et gérer leurs états dans un environnement CMS. Cette solution est conçue pour améliorer la gestion, la qualité et la traçabilité des processus industriels.
+A software application for tracking the use and managing the states of screen printing screens in a CMS environment. This solution is designed to improve the management, quality, and traceability of industrial processes.
 
 ---
 
-## **Table des matières**
+## **Table of Contents**
 1. [Description](#description)
-2. [Fonctionnalités principales](#fonctionnalités-principales)
-3. [Pré-requis](#pré-requis)
-4. [Installation et configuration](#installation-et-configuration)
-5. [Utilisation](#utilisation)
-6. [Structure des fichiers](#structure-des-fichiers)
-7. [Auteur](#auteur)
+2. [Main Features](#main-features)
+3. [Prerequisites](#prerequisites)
+4. [Installation and Configuration](#installation-and-configuration)
+5. [Usage](#usage)
+6. [File Structure](#file-structure)
+7. [Author](#author)
 
 ---
 
 ## **Description**
-Cette application permet aux opérateurs et administrateurs de suivre les états des écrans de sérigraphie pendant les différentes phases de production et de nettoyage, avec des options de recherche et d'exportation d'historique.
+This application allows operators and administrators to track the states of screen printing screens during various phases of production and cleaning, with options for searching and exporting the usage history.
 
 ---
 
-## **Fonctionnalités principales**
-1. **Gestion des écrans** :
-   - Ajout et suppression d'écrans par les administrateurs.
-   - Consultation des écrans existants avec leurs informations.
+## **Main Features**
+1. **Screen Management**:
+   - Adding and deleting screens by administrators.
+   - Viewing existing screens with their information.
 
-2. **Suivi des états** :
-   - Saisie des états des écrans (OK/KO) pour les opérations :
-     - Mise en production.
-     - Fin de production.
-     - Nettoyage avant et après.
+2. **State Tracking**:
+   - Recording the state of screens (OK/KO) for the following operations:
+     - Start of production.
+     - End of production.
+     - Cleaning before and after.
 
-3. **Recherche et historique** :
-   - Recherche des écrans par :
-     - Numéro d’écran.
-     - Référence produit.
-     - Période.
+3. **Search and History**:
+   - Searching screens by:
+     - Screen number.
+     - Product reference.
+     - Date range.
      - Face.
-   - Exportation de l’historique d'utilisation.
+   - Exporting usage history.
 
-4. **Espaces dédiés** :
-   - Espace utilisateur pour les opérateurs.
-   - Espace administrateur pour la gestion et le suivi.
+4. **Dedicated Spaces**:
+   - User space for operators.
+   - Admin space for management and tracking.
 
 ---
 
-## **Pré-requis**
-Avant de commencer, assurez-vous d'avoir les éléments suivants installés et configurés sur votre machine :  
+## **Prerequisites**
+Before you begin, ensure the following elements are installed and configured on your machine:
 
-1. **Environnement de développement** :
-   - [PHP](https://www.php.net/downloads) (version 7.4 ou supérieure).
-   - [Apache](https://httpd.apache.org/) ou tout autre serveur compatible.
-   - [PostgreSQL](https://www.postgresql.org/download/) (version 12 ou supérieure).
-   - [DBeaver](https://dbeaver.io/download/) pour gérer la base de données (ou tout autre outil de votre choix).
+1. **Development Environment**:
+   - [PHP](https://www.php.net/downloads) (version 7.4 or higher).
+   - [Apache](https://httpd.apache.org/) or any other compatible server.
+   - [PostgreSQL](https://www.postgresql.org/download/) (version 12 or higher).
+   - [DBeaver](https://dbeaver.io/download/) for managing the database (or any other tool of your choice).
 
-2. **Outils recommandés** :
-   - [XAMPP](https://www.apachefriends.org/index.html) ou [WAMP](http://www.wampserver.com/) pour configurer un environnement local.
-   - Un éditeur de code comme [Visual Studio Code](https://code.visualstudio.com/) ou [PHPStorm](https://www.jetbrains.com/phpstorm/).
+2. **Recommended Tools**:
+   - [XAMPP](https://www.apachefriends.org/index.html) or [WAMP](http://www.wampserver.com/) for setting up a local environment.
+   - A code editor such as [Visual Studio Code](https://code.visualstudio.com/) or [PHPStorm](https://www.jetbrains.com/phpstorm/).
 
-3. **Outils de gestion de version** :
-   - [Git](https://git-scm.com/) pour cloner et gérer le dépôt du projet.
+3. **Version Control Tools**:
+   - [Git](https://git-scm.com/) to clone and manage the project repository.
 
-4. **Navigateur web** :
-   - Un navigateur moderne compatible avec les applications web (Chrome, Firefox, Edge, etc.).
+4. **Web Browser**:
+   - A modern browser compatible with web applications (Chrome, Firefox, Edge, etc.).
 
-5. **Extension PHP** :
-   - Vérifiez que les extensions suivantes sont activées dans votre fichier `php.ini` :
+5. **PHP Extension**:
+   - Ensure the following extensions are enabled in your `php.ini` file:
      ```ini
      extension=pdo_pgsql
      extension=pdo
@@ -73,7 +73,8 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés et c
 
 ---
 
-## **Installation et configuration**
-1. **Cloner le dépôt** :
+## **Installation and Configuration**
+
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/YathrebSamaali/SuiviEcrans.git
